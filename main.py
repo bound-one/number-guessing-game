@@ -6,11 +6,11 @@ print("you need to guess the number")
 diff = input("select a diffculty 1 = easy 2= mid 3=hard")
 chance= 0
 if diff ==  1:
-  chance = chance+10
+  chance = 10
 elif diff == 2:
-  chance= chance+5
+  chance= 5
 elif diff == 3:
-  chance= chance+3
+  chance= 3
 while chance >= 0 :
   no = random.randint(1, 100)
   guess = int(input("your guess"))
@@ -18,10 +18,10 @@ while chance >= 0 :
     print ("you win")
   elif no > guess:
     print("greater")
-    chance = chance - 1
+    
   elif no < guess:
     print("less")  
-    chance = chance - 1
+  chance = chance - 1  
 
 
 
